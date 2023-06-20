@@ -1,4 +1,3 @@
-// Your script here.
 window.addEventListener('DOMContentLoaded', () => {
   const userInput = document.getElementById('userInput');
   const startButton = document.querySelector('button');
@@ -31,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
   function displayEndTime(endTime) {
     const hours = endTime.getHours();
     const minutes = endTime.getMinutes();
-    endTimeDisplay.textContent = `End Time: ${hours}:${minutes.toString().padStart(2, '0')}`;
+    endTimeDisplay.textContent = `${hours}:${minutes.toString().padStart(2, '0')}`;
   }
 
   // Event listener for start button click
